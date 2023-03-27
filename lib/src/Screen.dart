@@ -124,11 +124,11 @@ class _ScreenState extends State<Screen> {
 
 //*ESTE WIDGET É O BOTAO DE LIMPEZA
   Widget _buttondelimpar() {
-    return RaisedButton(
-      shape: RoundedRectangleBorder(
+    return ElevatedButton(
+      /*shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(360.0),
           side: BorderSide(color: Colors.deepPurple)),
-      color: Colors.deepPurple,
+      color: Colors.deepPurple,*/
       onPressed: () {
         valor_final = 1;
         setState(() {
@@ -165,7 +165,7 @@ class _ScreenState extends State<Screen> {
     return Container(
       child: TextField(
         keyboardType: TextInputType.number,
-        style: Theme.of(context).textTheme.display1,
+        //style: Theme.of(context).textTheme.display1,
         decoration: InputDecoration(
           contentPadding: const EdgeInsets.symmetric(vertical: 13.0),
           //: Icon(Icons.attach_money),
@@ -197,7 +197,7 @@ class _ScreenState extends State<Screen> {
     return Container(
       child: TextField(
         keyboardType: TextInputType.number,
-        style: Theme.of(context).textTheme.display1,
+        //style: Theme.of(context).textTheme.display1,
         decoration: InputDecoration(
           contentPadding: const EdgeInsets.symmetric(vertical: 13.0),
           //icon: Icon(Icons.attach_money),
@@ -229,7 +229,7 @@ class _ScreenState extends State<Screen> {
     return Container(
       child: TextField(
         keyboardType: TextInputType.number,
-        style: Theme.of(context).textTheme.display1,
+        //style: Theme.of(context).textTheme.display1,
         decoration: InputDecoration(
           contentPadding: const EdgeInsets.symmetric(vertical: 13.0),
           //icon: Icon(Icons.attach_money),
@@ -261,7 +261,7 @@ class _ScreenState extends State<Screen> {
     return Container(
       child: TextField(
         keyboardType: TextInputType.number,
-        style: Theme.of(context).textTheme.display1,
+        //style: Theme.of(context).textTheme.display1,
         decoration: InputDecoration(
           contentPadding: const EdgeInsets.symmetric(vertical: 13.0),
           //icon: Icon(Icons.attach_money),
@@ -292,7 +292,7 @@ class _ScreenState extends State<Screen> {
     return Container(
       child: TextField(
         keyboardType: TextInputType.number,
-        style: Theme.of(context).textTheme.display1,
+        //style: Theme.of(context).textTheme.display1,
         decoration: InputDecoration(
           contentPadding: const EdgeInsets.symmetric(vertical: 13.0),
           //icon: Icon(Icons.attach_money),
@@ -433,11 +433,12 @@ class _ScreenState extends State<Screen> {
     return SizedBox(
       width: 200.0,
       height: 55.0,
-      child: RaisedButton(
-        color: Colors.white,
+      child: ElevatedButton(
+        /*color: Colors.white,
         shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(30.0),
             side: BorderSide(color: Colors.deepPurple)),
+        */
         onPressed: () {
           valor_final = 1;
           setState(() {
